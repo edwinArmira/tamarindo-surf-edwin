@@ -1,0 +1,44 @@
+@mixin media($consult) {
+  
+    // USING BOOTSTRAP VARS:
+     $screen-xs-min: "480px"; // Cellphone
+     $screen-sm-min: "768px";  // Tablets
+     $screen-md-min: "992px"; // Desktops
+     $screen-lg-min: "1200px"; // Extra Large
+    
+    // Mobile First
+    @if $consult == xs-min {
+      @media (min-width: #{$screen-xs-min}) { @content; }
+    }
+    @else if $consult == sm-min {
+      @media (min-width: #{$screen-sm-min}) { @content; }
+    }
+    @else if $consult == md-min {
+      @media (min-width: #{$screen-md-min})  { @content; }
+    }
+    @else if $consult == lg-min {
+      @media (min-width: #{$screen-lg-min})  { @content; }
+    }
+  
+    
+    // Desktop First
+    @if $consult == xs-max {
+      @media (max-width: #{$screen-xs-min}-1) { @content; }
+    }
+    @else if $consult == sm-max {
+      @media (max-width: #{$screen-sm-min}-1) { @content; }
+    }
+    @else if $consult == md-max {
+      @media (max-width: #{$screen-md-min}-1)  { @content; }
+    }
+    @else if $consult == lg-max {
+      @media (max-width: #{$screen-lg-min}-1)  { @content; }
+    }
+}
+  
+  
+  // SASS MEDIA EXAMPLE:
+  
+  // @include media(lg-max){
+  //     color: brown;
+  // }
