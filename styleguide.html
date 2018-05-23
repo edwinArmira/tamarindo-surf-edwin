@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Style Sheet</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+</head>
+<body>
+
+    <main>
+        <section id="styleguide-section" class="section-padding--medium">
+            <div class="container">
+                <div class="logo-box-container">
+                    <a href="index.html" class="logo"><img src="img/Logo-blue.png" alt="Logo page"></a>
+                    <p class="styleguide-title">- Styleguide</p>
+                </div><!-- /.logo-box-container -->
+    
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 content-space mb-50">
+    
+                        <h1>COLOR PALETTE</h1>
+                        <p>These are the most important colors and will be used all throughout the site. Regular colors are the standard colors on the site while hover colors are the hover state for the regular colors. Overlay colors areusually used with opacity on top of images.</p>
+    
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <p>Regular Colors</p>
+                                <div class="square primary-bg-color"></div>
+                                <input type="text" id="primary-color" value="#00bdc4" onfocus="copyCode(this.id)" class="copycode">
+                                <input type="text" id="normal-color" value='class="primary-color"' class="primary-color copycode" onfocus="copyCode(this.id)">
+                                <input type="text" id="primary-bg-color" value='class="primary-bg-color"' class="primary-bg-color copycode" onfocus="copyCode(this.id)">
+                                
+                            </div>
+    
+                            <div class="col-xs-4">
+                                <p>Hover Colors</p>
+                                <div class="square hover-bg-color"></div>
+                                <input type="text" id="hover-color" value="#00a3a9" onfocus="copyCode(this.id)" class="copycode">
+                                <input type="text" id="text-hover" value='class="hover-color"' class="hover-color copycode" onfocus="copyCode(this.id)">
+                                <input type="text" id="hover-bg-color" value='class="hover-bg-color"' class="hover-bg-color copycode" onfocus="copyCode(this.id)">
+                            </div>
+    
+                            <div class="col-xs-4">
+                                <p>Overlay Colors</p>
+                                <div class="square primary-bg-color"></div>
+                                <input type="text" id="overlay" value="#00bdc4" onfocus="copyCode(this.id)" class="copycode">
+                                <input type="text" id="overlay-color" value='class="primary-color"' class="primary-color copycode" onfocus="copyCode(this.id)">
+                                <input type="text" id="overlay-bg-color" value='class="primary-bg-color"' class="primary-bg-color copycode" onfocus="copyCode(this.id)">
+                               
+                            </div>
+                        </div><!-- /.row -->
+
+                        <div class="buttons">
+
+                            <h1>Buttons</h1>
+                            <h3>Sizes</h3>
+
+                            <p>Add 'button-small' or 'button-large' for sizes. A button is normal by default</p>
+                            <h3>Circle Buttons</h3>
+
+                            <div class="row">
+
+                                <div class="col-xs-6 col-lg-4">
+                                    <p>Small Button</p>
+                                    <button class="primary-button button-small circle-button">Book Now <i class="fas fa-angle-double-right"></i></button>
+                                    <input class="copycode" type="text" id="btn1" value='class="primary-button button-small circle-button"' onfocus="copyCode(this.id)">
+                                </div><!-- /.col -->
+
+                                <div class="col-xs-6 col-lg-4">
+                                    <p>Normal Button</p>
+                                    <button class="primary-button circle-button">Book Now <i class="fas fa-angle-double-right"></i></button>
+                                    <input class="copycode" type="text" id="btn2" value='class="primary-button circle-button"' onfocus="copyCode(this.id)">
+                                </div><!-- /.col -->
+
+                                <div class="col-xs-6 col-lg-4">
+                                    <p>Big Button</p>
+                                    <button class="primary-button button-large circle-button">Book <i class="fas fa-angle-double-right"></i></button>
+                                    <input class="copycode" type="text" id="btn3" value='class="primary-button button-large circle-button"' onfocus="copyCode(this.id)">
+                                </div><!-- /.col -->
+
+                            </div><!-- /.row -->
+
+                            <h3>Square Buttons</h3>
+
+                            <div class="row">
+
+                                <div class="col-xs-6 col-lg-4">
+                                    <p>Small Button</p>
+                                    <button class="primary-button button-small">Book Now <i class="fas fa-angle-double-right"></i></button>
+                                    <input class="copycode" type="text" id="btn4" value='class="primary-button button-small"' onfocus="copyCode(this.id)">
+                                </div><!-- /.col -->
+
+                                <div class="col-xs-6 col-lg-4">
+                                    <p>Normal Button</p>
+                                    <button class="primary-button">Book Now <i class="fas fa-angle-double-right"></i></button>
+                                    <input class="copycode" type="text" id="btn5" value='class="primary-button"' onfocus="copyCode(this.id)">
+                                </div><!-- /.col -->
+
+                                <div class="col-xs-6 col-lg-4">
+                                    <p>Big Button</p>
+                                    <button class="primary-button button-large">Book <i class="fas fa-angle-double-right"></i></button>
+                                    <input class="copycode" type="text" id="btn6" value='class="primary-button button-large"' onfocus="copyCode(this.id)">
+                                </div><!-- /.col -->
+
+                            </div><!-- /.row -->
+
+                            <h3>Full width button (add 'full-width' to any button)</h3>
+
+                            <button class="primary-button full-width circle-button">Book Now <i class="fas fa-angle-double-right"></i></button>
+                            <input class="copycode" type="text" id="btn7" value='class="primary-button full-width circle-button"' onfocus="copyCode(this.id)">
+
+                            <h2>Solid Color or Image Backgrounds</h2>     
+                            <div class="primary-bg-color plr-10 ptb-30">
+                                <p>add the class 'primary-bg-color' to a container to change all the font color to white</p>
+                                <h3>Secondary buttons</h3>
+
+                                <div class="row">
+
+                                    <div class="col-xs-6 col-lg-4">
+                                        <button class="secundary-button button-small circle-button">Book Now <i class="fas fa-angle-double-right"></i></button>
+                                        <input class="copycode" type="text" id="btn8" value='class="secundary-button button-small circle-button"' onfocus="copyCode(this.id)">
+                                    </div>
+
+                                    <div class="col-xs-6 col-lg-4">
+                                        <button class="secundary-button circle-button">Book Now <i class="fas fa-angle-double-right"></i></button>
+                                        <input class="copycode" type="text" id="btn9" value='class="secundary-button circle-button"' onfocus="copyCode(this.id)">
+                                    </div>
+
+                                    <div class="col-xs-6 col-lg-4">
+                                        <button class="secundary-button button-large circle-button">Book <i class="fas fa-angle-double-right"></i></button>
+                                        <input class="copycode" type="text" id="btn10" value='class="secundary-button button-large circle-button"' onfocus="copyCode(this.id)">
+                                    </div>
+
+                                </div>
+
+                                <h3>Transparent Buttons</h3>
+                                <div class="row">
+                                    <div class="col-xs-6 col-lg-4">
+                                        <button class="square-button button-small">BOOK <i class="fas fa-angle-double-right"></i></button>
+                                        <input class="copycode" type="text" id="btn11" value='class="square-button button-small"' onfocus="copyCode(this.id)">                                        
+                                    </div>
+
+                                    <div class="col-xs-6 col-lg-4">
+                                        <button class="square-button">BOOK <i class="fas fa-angle-double-right"></i></button>
+                                        <input class="copycode" type="text" id="btn12" value='class="square-button"' onfocus="copyCode(this.id)">                                        
+                                    </div>
+
+                                    <div class="col-xs-6 col-lg-4">
+                                        <button class="square-button button-large">B <i class="fas fa-angle-double-right"></i></button>
+                                        <input class="copycode" type="text" id="btn13" value='class="square-button button-large"' onfocus="copyCode(this.id)">                                        
+                                    </div>
+                                </div>
+
+                                <h3>Full Width Transparent</h3>
+                                <button class="square-button full-width">Book a Tour Heare <i class="fas fa-angle-double-right"></i></button>
+                                <input class="copycode" type="text" id="btn14" value='class="square-button full-width"' onfocus="copyCode(this.id)">                                        
+                                
+                            </div>             
+
+                        </div><!-- /.buttons -->
+                       
+                    </div><!-- /.col -->
+
+                    <div class="col-xs-12 col-sm-6 content-space">
+
+                        <h1>BASIC TYPOGRAPHY</h1>
+                        <p class="m-0"><span class="text-bold">HEADINGS:</span> ROBOTO LIGHT</p>
+                        <p class="m-0"><span class="text-bold">Body:</span> Open Sans</p>
+                        <p><span class="text-bold">Font Color:</span> #686868</p>
+
+                        <p>Most of your site it made of text, so typography is very important!</p>
+
+                        <h1>H1 (46 at 1200)</h1>
+                        <h2>H2 (30 at 1200px browser)</h2>
+                        <h3>H3 (20 at 1200px browser)</h3>
+                        <h4>H4 (16 at 1200px browser)</h4>
+                        <h5>H5 (14 at 1200px browser)</h5>
+                        <h6>H6 (12 at 1200px browser)</h6>
+
+                        <h2>This is important (READ THIS)</h2>
+                        <p>In order to get our spacing right, you well need to wrap your on-page content in a containing element with the class <span class="text-bold">content-space</span> This will remove the spacing from the first child element (heading or paragraph) and set the spacing to match our theme's design.</p>
+                         
+                        <h3>A little more about content-space</h3>
+                        <p>Each heading element will have 30 pixels of space (margin-top) <span class="text-bold">unless</span> it is the first child of an element with the class 'content-space'. Also important: this does not work if 'content-space' isn't the immediate parent</p>
+
+                        <h3>These are all items in an unordered list.</h3>
+                        <p>Add the class 'icon-ul' to the 'ul' element.</p>
+
+                        <ul class="icon-ul">
+                            <li>This is a list item.</li>
+                            <li>This is also a list item.</li>
+                            <li>Here’s one more.</li>
+                            <li>And just for good measure...</li>
+                            <li>Here’s one last one.</li>
+                        </ul>
+                        <input class="copycode" type="text" id="icon-ul" value='class="icon-ul"' onfocus="copyCode(this.id)">                                        
+                        
+                        <h3>Theme Links</h3>
+                        <a href="#" class="primary-link">READ MORE <i class="fas fa-angle-double-right"></i></a>
+                        <input class="copycode" type="text" id="primary-link" value='class="primary-link"' onfocus="copyCode(this.id)">                                        
+                        
+                        <h2>Helper Classes</h2>
+                        <h3>Margin and Padding</h3>
+                        <p>While the basic theme should have the right sized spaces and it will be better to follow them as a general rule. If you do however find yourself in a position where you need to set the space here's a few classes to help you (better than adding 'br')</p>
+                        <p>While for instance, it is better to add a class 'content-space' to the container of the content to get rid of the margin ot the first element, an alternative is to add <span class="text-bold">class="mb-0"</span>.</p>
+                        
+                        <div class="row">
+                            <div class="col-xs-2">.mt-0</div>
+                            <div class="col-xs-2">.mt-10</div>
+                            <div class="col-xs-2">.mt-20</div>
+                            <div class="col-xs-2">.mt-30</div>
+                            <div class="col-xs-2">.mt-60</div>
+                            <div class="col-xs-2">.mt-90</div>
+                        </div><!-- /.row -->
+
+                        <p class="mt-20">At times you will want to get rid of the margin on the bottom of an element within a closed container. You can use <span class="text-bold">class="mb-0"</span></p>
+                        
+                        <h3>Style</h3>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <p class="primary-bg-color text-left">.text-left</p>
+                                <p class="text-bold">bold options</p>
+                                <span>.text-bold</span>
+                                <p class="mb-0">&lt;strong></p>
+                                <p>&lt;b></p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="primary-bg-color text-center">.text-center</p>
+                                <p class="text-italic">italic options</p>
+                                <span>.text-italic</span>
+                                <p class="mb-0">&lt;em></p>
+                                <p>&lt;i></p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="primary-bg-color text-right">.text-right</p>
+                                <p class="text-underline">underline options</p>
+                                <span>.text-underline</span>
+                                <p>&lt;u></p>
+                            </div>                           
+                        </div><!-- /.row --> 
+                        
+                        <div class="paddings">
+                            <h4>Section Padding</h4>
+                            <p>Depending on the section, you can add one of these classes for space (adds space above and below)</p>
+                            <p>(30px top and bottom) : <span class="text-bold">.section-padding--small</span></p>
+                            <p>(60px top and bottom) : <span class="text-bold">.section-padding--medium</span></p>
+                            <p>(120px top and bottom) : <span class="text-bold">.section-padding--large</span></p>
+                        </div><!-- /.paddings -->
+
+                        <h3>Bootstrap</h3>
+                        <p>This theme is built with <span class="text-bold">Bootstrap 3.</span> for more helper classes available in this theme you can visit the <a href="http://getbootstrap.com/docs/3.3/" target="_blank">docs here.</a></p>
+                        
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+
+            <section id="page_elements">
+
+                <div class="container">
+
+                    <h1>Page Elements</h1>
+                    <h2>Square Responsive Img Grid</h2>
+                    <p>desktop 5, table-wide 3,2, table-narrow: 2,2,1, phone:1x5</p>  
+                    
+                    <!-- <h4 class="mb-0 mt-10">Class of the flex row</h4>
+                    <input class="copycode" type="text" id="flex-row1" value='class="flex-row"' onfocus="copyCode(this.id)">                                         -->
+                                        
+                    <div class="flex-row">
+
+                        <div class="cell-x5 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf1.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x5 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf1.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x5 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf1.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x5 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf1.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x5 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf1.jpg)"></a>
+                        </div><!-- /.cell -->
+
+                    </div>
+                    <input class="copycode" type="text" id="flex-row-children1" value='class="cell-x5 hover-effects"' onfocus="copyCode(this.id)">      
+                    
+                    <p class="mt-20">desktop 6, tablet-wide 3,3, table-narrow: 2,2,2, phone: 1x6</p>
+                    <div class="flex-row">
+
+                        <div class="cell-x6 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf2.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x6 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf2.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x6 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf2.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x6 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf2.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x6 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf2.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x6 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf2.jpg)"></a>
+                        </div><!-- /.cell -->
+
+                    </div>
+                    <input class="copycode" type="text" id="flex-row-children2" value='class="cell-x6 hover-effects"' onfocus="copyCode(this.id)">
+                
+                    <p class="mt-20">desktop 4, tablet-wide 2,2, table-narrow: 2,2, phone: 1x4</p>
+                    <div class="flex-row">
+
+                        <div class="cell-x4 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf3.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x4 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf3.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x4 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf3.jpg)"></a>
+                        </div><!-- /.cell -->
+                        <div class="cell-x4 hover-effects">
+                            <a href="" class="cover-img" style="background-image: url(img/surf3.jpg)"></a>
+                        </div><!-- /.cell -->
+
+                    </div>
+                    <input class="copycode" type="text" id="flex-row-children3" value='class="cell-x4 hover-effects"' onfocus="copyCode(this.id)">
+
+                    <div class="row is-flex mt-30">
+
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                            <div class="box-content p-20">
+                                <div class="hover-effects">
+                                    <div class="cover-img full-width" style="background-image: url(img/surf3.jpg)"></div>
+                                </div>
+                                <p class="text-white pt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo consequatur consectetur dolor repudiandae, </p>
+                                <button class="square-button bottom-button">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                            <div class="box-content p-20">
+                                <div class="hover-effects">
+                                    <div class="cover-img full-width" style="background-image: url(img/surf3.jpg)"></div>
+                                </div>
+                                <button class="square-button bottom-button">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                            <div class="box-content p-20">
+                                <div class="hover-effects">
+                                    <div class="cover-img full-width" style="background-image: url(img/surf3.jpg)"></div>
+                                </div>
+                                <button class="square-button bottom-button">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                            <div class="box-content p-20">
+                                <div class="hover-effects">
+                                    <div class="cover-img full-width" style="background-image: url(img/surf3.jpg)"></div>
+                                </div>
+                                <button class="square-button bottom-button">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                            <div class="box-content p-20">
+                                <div class="hover-effects">
+                                    <div class="cover-img full-width" style="background-image: url(img/surf3.jpg)"></div>
+                                </div>
+                                <button class="square-button bottom-button">Book Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h3>Use <code>row</code> and <code>is-flex</code> classes to get all the columns the same height</h3>
+                    <input class="copycode" type="text" id="is-flex" value='class="row is-flex"' onfocus="copyCode(this.id)">
+                    <h3>You can use <code>col-xs-20</code>, <code>col-sm-20</code>, <code>col-md-20</code>, <code>col-lg-20</code> to get 5 columns in the different viewports, it works with bootstrap 3</h3>
+                    <input class="copycode" type="text" id="col-lg-20" value='class="col-xs-12 col-sm-3 col-md-4 col-lg-20"' onfocus="copyCode(this.id)">
+                    <h4>Add the <span class="text-bold">bottom-button</span> class to get the button at the very bottom of the box, remember that the parent box should have a height of 100%</h4>
+                    <input class="copycode" type="text" id="bottom-button" value='class="square-button bottom-button"' onfocus="copyCode(this.id)">                   
+
+                    <h2>Image and Image/Ccontent Options</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="hover-effects">
+                                <div class="cover-img" style="background-image: url(img/surf2.jpg)"></div>
+                            </div>
+                            <input class="copycode" type="text" id="hover-effects" value='class="hover-effects"' onfocus="copyCode(this.id)">                   
+                        </div><!-- /.col -->
+
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="hover-effects">
+                                <div class="overlay"></div>
+                                <a href="" class="cover-img" style="background-image: url(img/surf3.jpg)"></a>
+                            </div>
+                            <input class="copycode" type="text" id="overlay-bg" value='class="overlay"' onfocus="copyCode(this.id)">                                               
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="hover-effects">
+                                <div class="hover-info-container">
+                                    <h2>STYLEGUIDE</h2>
+                                    <button class="square-button">Book Now</button>
+                                </div>
+                                <a href="" class="cover-img" style="background-image: url(img/surf3.jpg)"></a>
+                            </div>
+                            <input class="copycode" type="text" id="hover-info" value='class="hover-info-container"' onfocus="copyCode(this.id)">                                               
+                        </div>
+                    </div><!-- /.row -->
+
+                </div><!-- /.container -->
+
+            </section><!-- /#page_elements -->
+        </section><!-- /#styleguide-section -->
+    </main><!-- /main -->
+
+    <script src="js/fontawesome-all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
